@@ -1,0 +1,38 @@
+<!DOCTYPE html> {{> header}}
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="https://colorlib.com/etc/404/colorlib-error-404-2/css/style.css" />
+
+
+<body id="page-top">
+  <!-- Navigation Bar-->
+  {{> navigation}}
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {{> side}}
+    <div id="content-wrapper">
+      <div class="container-fluid">
+        <div id="notfound">
+          <div class="notfound">
+            <div class="notfound-404">
+              <h1>E<span>r</span>r<span>o</span>r</h1>
+            </div>
+            <h2>{{message}}</h2>
+
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  <!-- Logout Modal-->
+  {{> logout}} {{> scripts}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+</body>
+
+</html>

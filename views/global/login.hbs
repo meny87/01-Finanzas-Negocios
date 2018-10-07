@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        {{title}}
+    </title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../images/lion-logo-polygone-ferreux.png"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/stylesheets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/bootstrap/css/bootstrap_login.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <form class="form-signin" action="/login" method="post">
+        <img class="mb-4" src="/images/lion-logo-polygone-ferreux.png" alt="" width="200" height="200">
+        <h1 class="h3 mb-3 font-weight-normal">Sistema de Control de Finanzas</h1>
+        <label for="inputUser" class="sr-only">Ususario</label>
+        <input type="text" id="inputUser" class="form-control" name="username" placeholder="Usuario" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Contraseña" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+        <p class="mt-5 mb-3 text-muted">&copy;Fam. Casas Bayona</p>
+    </form>
+</body>
+
+</html>

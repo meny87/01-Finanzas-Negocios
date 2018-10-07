@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body id="page-top">
+  <!-- Navigation Bar-->
+  {{> navigation}}
+
+
+  <div id="wrapper">
+    <!-- Sidebar -->
+    {{> side}}
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            Taxi Amigo
+          </li>
+          <li class="breadcrumb-item active">{{page_title}}</li>
+        </ol>
+
+        <!-- Page Content -->
+        <div class="row">
+          <div class="col-8">
+            <h1>{{page_title}}</h1></div>
+          <div class="col-4">
+            <div class="alert alert-info" role="alert">
+              Periodo Actual: <b>Semana{{current_week}}-{{current_year}}</b>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+      <!-- /.container-fluid -->
+
+
+      <div class="container">
+
+
+
+          <div class="alert alert-success" role="alert">
+            <div class="row">
+              <div class="col">
+                <h5>Cuotas</h5>
+              </div>
+              <div class="col">
+                <input class="form-control" id="search__cuotas" type="text" placeholder="Buscar..">
+              </div>
+            </div>
+          </div>
+
+          <table class="table table-sm table-hover">
+            <thead class="thead-light">
+
+              <tr>
+                <th scope="col">Unidad</th>
+                <th scope="col">Periodo</th>
+                <th scope="col">Conductor</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Recibió Pago</th>
+                <th scope="col">Fecha de Registro</th>
+                <th scope="col">Comentarios</th>
+                <th scope="col">Borrar</th>
+              </tr>
+            </thead>
+            <tbody id="info__cuotas">
+              {{#each cuotas}}
+                <tr id="{{_id}}" >
+                  <td>U{{unidad}}</td>
+                  <td>{{periodo}}</td>
+                  <td>{{conductor}}</td>
+                  <td>${{cantidad}}</td>
+                  <td>{{usuario}}</td>
+                  <td>{{fecha}}</td>
+                  <td>{{comentarios}}</td>
+                  <td><i class="fa fa-minus-circle fa-sm" style="color:#FF0000;"></i></td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- Logout Modal-->
+    {{> logout}}
+
+    {{> scripts}}
+
+
+</body>
+
+</html>

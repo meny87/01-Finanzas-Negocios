@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body id="page-top">
+  <!-- Navigation Bar-->
+  {{> navigation}}
+
+
+  <div id="wrapper">
+    <!-- Sidebar -->
+    {{> side}}
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            Taxi Amigo
+          </li>
+          <li class="breadcrumb-item active">{{page_title}}</li>
+        </ol>
+
+        <!-- Page Content -->
+        <h1>{{page_title}}</h1>
+        <hr>
+
+      </div>
+      <!-- /.container-fluid -->
+
+
+      <div class="container">
+        <div class="alert alert-success" role="alert">
+          <h5>Agregar Nuevo Conductor</h5>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm">
+                  <label for="inputEmail4">Nombre</label>
+                  <input type="email" class="form-control form-control-sm" id="inputEmail4" placeholder="Nombre(s)">
+                </div>
+                <div class="form-group col-sm">
+                  <label for="inputPassword4">Apellido Paterno</label>
+                  <input type="password" class="form-control form-control-sm" id="inputPassword4" placeholder="Apellido Paterno">
+                </div>
+                <div class="form-group col-sm">
+                  <label for="inputPassword4">Apellido Materno</label>
+                  <input type="password" class="form-control form-control-sm" id="inputPassword4" placeholder="Apellido Materno">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress">Dirección</label>
+                <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Calle, Número, Colonia">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm">
+                  <label for="inputEmail4">Teléfono</label>
+                  <input type="email" class="form-control form-control-sm" id="inputEmail4" placeholder="Telefono Personal del Conductor">
+                </div>
+                <div class="form-group col-sm">
+                  <label for="inputPassword4">Contacto Emergencia</label>
+                  <input type="password" class="form-control form-control-sm" id="inputPassword4" placeholder="Nombre del Contacto de Emergencia">
+                </div>
+                <div class="form-group col-sm">
+                  <label for="inputPassword4">Teléfono Emergencia</label>
+                  <input type="password" class="form-control form-control-sm" id="inputPassword4" placeholder="Teléfono de Emergencia">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="container">
+        <div class="alert alert-info" role="alert">
+          <h5>Conductores Registrados</h5>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">col-sm-8</div>
+          <div class="col-sm-8"><input class="form-control" id="myInput" type="text" placeholder="Buscar.."></div>
+        </div>
+
+
+        <br>
+        <table class="table table-sm table-hover">
+          <thead class="thead-dark">
+
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido Paterno</th>
+              <th scope="col">Apellido Materno</th>
+              <th scope="col">Dirección</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">Contacto de Emergencia</th>
+              <th scope="col">Teléfono de Emergencia</th>
+              <th scope="col">Acción</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mda</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td><i class="fa fa-minus-circle fa-sm" style="color:#FF0000;"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdb</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td><i class="fa fa-minus-circle fa-sm" style="color:#FF0000;"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdc</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td><i class="fa fa-minus-circle fa-sm" style="color:#FF0000;"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2018</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+  <!-- Logout Modal-->
+  {{> logout}}
+
+  {{> scripts}}
+
+</body>
+
+</html>
